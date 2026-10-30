@@ -22,6 +22,7 @@ class ProjectsData {
           'features using BLoC state management and followed a Clean Architecture / Use Case '
           'approach for maintainable, scalable code.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture', 'REST API'],
+      screenshotCount: 3,
     ),
     Project(
       id: 'warraq',
@@ -46,6 +47,7 @@ class ProjectsData {
           'background mode, prayer time reminders, and an adhan/alarm system. Built with BLoC and '
           'structured using Clean Architecture / Clean Code principles.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture'],
+      screenshotCount: 5,
     ),
     Project(
       id: 'sign_language',
@@ -88,6 +90,7 @@ class ProjectsData {
           'A digital wallet app for managing internal crypto transactions. Used BLoC for state '
           'management, Formz for validation, and integrated REST APIs with Dio.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Formz', 'Dio', 'REST API'],
+      screenshotCount: 5,
     ),
     Project(
       id: 'shisha',
@@ -99,6 +102,7 @@ class ProjectsData {
           'An ordering app for shisha and drinks. Implemented item selection, dynamic pricing, and '
           'location handling with BLoC and SharedPreferences.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'SharedPreferences'],
+      screenshotCount: 5,
     ),
     Project(
       id: 'playstation_cafe',
@@ -110,6 +114,7 @@ class ProjectsData {
           'A booking system for PlayStation café sessions. Used BLoC to manage session flow and '
           'user state, with location and map integration via Google Maps.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Google Maps'],
+      screenshotCount: 3,
     ),
     Project(
       id: 'tammini',
@@ -121,6 +126,21 @@ class ProjectsData {
           'A location-based safety alert app. Built with GetX for real-time state updates, Google '
           'Maps integration, geofencing, and compass-based direction tracking.',
       technologies: ['Flutter', 'Dart', 'GetX', 'Google Maps', 'Geofencing'],
+      screenshotCount: 4,
+    ),
+    Project(
+      id: 'carpenters_account',
+      name: "Carpenter's Account",
+      period: 'Oct 2026',
+      category: ProjectCategory.mobileApp,
+      shortDescription: 'A wood-panel cutting calculator for carpentry workshops.',
+      description:
+          'A materials-planning app for carpenters. Users create a room/project, choose a base wood '
+          'panel type (e.g. MDF 18mm), and add furniture pieces (wardrobes, beds, desks, drawer '
+          'units) with precise dimensions, shelf/door/drawer counts, and panel-cutting rules; the '
+          'app then calculates how many sheets of material the room requires.',
+      technologies: ['Flutter', 'Dart'],
+      screenshotCount: 5,
     ),
   ];
 }
