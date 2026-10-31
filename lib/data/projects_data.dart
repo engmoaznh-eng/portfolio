@@ -22,7 +22,7 @@ class ProjectsData {
           'features using BLoC state management and followed a Clean Architecture / Use Case '
           'approach for maintainable, scalable code.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture', 'REST API'],
-      screenshotCount: 3,
+      screenshotCount: 4,
       hasLogo: true,
     ),
     Project(
@@ -37,7 +37,7 @@ class ProjectsData {
           'drills and multiple-choice quizzes to test understanding, and a profile screen tracking '
           'scores across subjects.',
       technologies: ['Flutter', 'Dart'],
-      screenshotCount: 5,
+      screenshotCount: 18,
       hasLogo: true,
     ),
     Project(
@@ -51,7 +51,7 @@ class ProjectsData {
           'background mode, prayer time reminders, and an adhan/alarm system. Built with BLoC and '
           'structured using Clean Architecture / Clean Code principles.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture'],
-      screenshotCount: 5,
+      screenshotCount: 16,
       hasLogo: true,
     ),
     Project(
@@ -96,7 +96,7 @@ class ProjectsData {
           'A digital wallet app for managing internal crypto transactions. Used BLoC for state '
           'management, Formz for validation, and integrated REST APIs with Dio.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Formz', 'Dio', 'REST API'],
-      screenshotCount: 5,
+      screenshotCount: 15,
       hasLogo: true,
     ),
     Project(
@@ -109,7 +109,7 @@ class ProjectsData {
           'An ordering app for shisha and drinks. Implemented item selection, dynamic pricing, and '
           'location handling with BLoC and SharedPreferences.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'SharedPreferences'],
-      screenshotCount: 5,
+      screenshotCount: 13,
       hasLogo: true,
     ),
     Project(
