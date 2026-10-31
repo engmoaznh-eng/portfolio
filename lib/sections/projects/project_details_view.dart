@@ -10,7 +10,6 @@ import '../../models/project_model.dart';
 import '../../widgets/buttons/primary_button.dart';
 import '../../widgets/buttons/secondary_button.dart';
 import '../../widgets/project/project_image.dart';
-import '../../widgets/project/project_logo.dart';
 import '../../widgets/project/tech_badge.dart';
 import '../../widgets/project/screenshot_gallery.dart';
 
@@ -73,11 +72,17 @@ class ProjectDetailsView extends StatelessWidget {
                             color: AppColors.surfaceElevated,
                             child: AspectRatio(
                               aspectRatio: 16 / 9,
-                              child: ProjectImage(
-                                assetPath: project.coverImage,
-                                projectName: project.name,
-                                fit: BoxFit.contain,
-                              ),
+                              child: project.hasLogo
+                                  ? ProjectImage(
+                                      assetPath: project.logoImage,
+                                      projectName: project.name,
+                                      fit: BoxFit.cover,
+                                    )
+                                  : ProjectImage(
+                                      assetPath: project.coverImage,
+                                      projectName: project.name,
+                                      fit: BoxFit.contain,
+                                    ),
                             ),
                           ),
                         ),
@@ -87,10 +92,6 @@ class ProjectDetailsView extends StatelessWidget {
                           spacing: AppDimensions.spaceMd,
                           runSpacing: AppDimensions.spaceSm,
                           children: [
-                            if (project.hasLogo) ...[
-                              ProjectLogo(assetPath: project.logoImage, size: 44),
-                              const SizedBox(width: 2),
-                            ],
                             Text(project.name, style: AppTextStyles.displaySm),
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
