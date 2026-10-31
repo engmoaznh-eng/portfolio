@@ -57,10 +57,24 @@ class _ProjectCardState extends State<ProjectCard> {
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
+                    Container(color: AppColors.surfaceElevated),
                     AnimatedScale(
                       duration: const Duration(milliseconds: 250),
                       scale: _hovering ? 1.05 : 1.0,
-                      child: ProjectImage(assetPath: project.coverImage, projectName: project.name),
+                      child: project.hasLogo
+                          ? Padding(
+                              padding: const EdgeInsets.all(AppDimensions.spaceXxl),
+                              child: ProjectImage(
+                                assetPath: project.logoImage,
+                                projectName: project.name,
+                                fit: BoxFit.contain,
+                              ),
+                            )
+                          : ProjectImage(
+                              assetPath: project.coverImage,
+                              projectName: project.name,
+                              fit: BoxFit.contain,
+                            ),
                     ),
                     Positioned(
                       top: AppDimensions.spaceSm,

@@ -9,12 +9,12 @@
 
 ## 2. CV Source
 
-Source file: `C:\Users\moaz\Downloads\Moaz Alnahas Alhumsi.pdf` (as provided by the user), copied into the project at `assets/cv/cv.pdf` for the public "Download CV" button.
+Source file: `C:\Users\moaz\Downloads\Moaz Alnahas Alhomse.pdf` (as provided by the user), copied into the project at `assets/cv/cv.pdf` for the public "Download CV" button.
 
 ### Extracted facts (verbatim/paraphrased, nothing added)
 
 **Identity**
-- Name: Moaz Alnahas Alhumsi
+- Name: Moaz Alnahas Alhomse
 - Title on CV: "Informatic Engineer" (spelling corrected to "Informatics Engineer" in the UI — not a factual change)
 - Phone: +963 981 174 823
 - Email: eng.moaznh@gmail.com

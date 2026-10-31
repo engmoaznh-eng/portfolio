@@ -23,18 +23,22 @@ class ProjectsData {
           'approach for maintainable, scalable code.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture', 'REST API'],
       screenshotCount: 3,
+      hasLogo: true,
     ),
     Project(
       id: 'warraq',
       name: 'Warraq',
       period: 'Aug 2025 – Present',
       category: ProjectCategory.mobileApp,
-      shortDescription: 'A document/library management app with offline storage.',
+      shortDescription: 'A gamified Islamic-studies app with lessons, levels, and quizzes.',
       description:
-          'A document/library management app with local storage and server-based authentication '
-          '(sign in/sign out). Used BLoC for state management, SQLite (sqflite) for offline data, '
-          'and implemented Clean Architecture with Use Cases.',
-      technologies: ['Flutter', 'Dart', 'BLoC', 'SQLite', 'Clean Architecture'],
+          'An Islamic-education app structured as level-based courses — Hadith, Fiqh, Tafsir, '
+          'Aqeedah, and Seerah. Each level unlocks the next as the user progresses, with practice '
+          'drills and multiple-choice quizzes to test understanding, and a profile screen tracking '
+          'scores across subjects.',
+      technologies: ['Flutter', 'Dart'],
+      screenshotCount: 5,
+      hasLogo: true,
     ),
     Project(
       id: 'quran',
@@ -48,6 +52,7 @@ class ProjectsData {
           'structured using Clean Architecture / Clean Code principles.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture'],
       screenshotCount: 5,
+      hasLogo: true,
     ),
     Project(
       id: 'sign_language',
@@ -79,6 +84,7 @@ class ProjectsData {
       shortDescription: 'An app to calculate BMI, with sign in and sign up.',
       description: 'Developed an application that can calculate BMI for users, with sign in and sign up.',
       technologies: [],
+      hasLogo: true,
     ),
     Project(
       id: 'mrb_coin',
@@ -91,6 +97,7 @@ class ProjectsData {
           'management, Formz for validation, and integrated REST APIs with Dio.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Formz', 'Dio', 'REST API'],
       screenshotCount: 5,
+      hasLogo: true,
     ),
     Project(
       id: 'shisha',
@@ -103,6 +110,7 @@ class ProjectsData {
           'location handling with BLoC and SharedPreferences.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'SharedPreferences'],
       screenshotCount: 5,
+      hasLogo: true,
     ),
     Project(
       id: 'playstation_cafe',
@@ -115,6 +123,7 @@ class ProjectsData {
           'user state, with location and map integration via Google Maps.',
       technologies: ['Flutter', 'Dart', 'BLoC', 'Google Maps'],
       screenshotCount: 3,
+      hasLogo: true,
     ),
     Project(
       id: 'tammini',
@@ -127,6 +136,7 @@ class ProjectsData {
           'Maps integration, geofencing, and compass-based direction tracking.',
       technologies: ['Flutter', 'Dart', 'GetX', 'Google Maps', 'Geofencing'],
       screenshotCount: 4,
+      hasLogo: true,
     ),
     Project(
       id: 'carpenters_account',
@@ -141,6 +151,7 @@ class ProjectsData {
           'app then calculates how many sheets of material the room requires.',
       technologies: ['Flutter', 'Dart'],
       screenshotCount: 5,
+      hasLogo: true,
     ),
   ];
 }

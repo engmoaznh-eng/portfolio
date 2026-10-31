@@ -2,7 +2,7 @@
 
 ## 1. Goal
 
-A production-ready, single-page Flutter Web portfolio for Moaz Alnahas Alhumsi, deployed to GitHub Pages at
+A production-ready, single-page Flutter Web portfolio for Moaz Alnahas Alhomse, deployed to GitHub Pages at
 `https://engmoaznh-eng.github.io/portfolio/`, used to apply for Flutter/software jobs and to be sent directly to
 recruiters, agencies, and clients. Premium, modern, **dark** developer aesthetic — not a template, not
 AI-effect-heavy, not colorful/gaming-styled.

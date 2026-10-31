@@ -3,7 +3,7 @@
 class PersonalData {
   PersonalData._();
 
-  static const String name = 'Moaz Alnahas Alhumsi';
+  static const String name = 'Moaz Alnahas Alhomse';
   static const String title = 'Flutter Developer & Informatics Engineer';
   static const String initials = 'MA';
 

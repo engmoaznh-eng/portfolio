@@ -1,6 +1,6 @@
 # Portfolio
 
-Professional Flutter Web portfolio for **Moaz Alnahas Alhumsi** — Flutter Developer & Informatics Engineer.
+Professional Flutter Web portfolio for **Moaz Alnahas Alhomse** — Flutter Developer & Informatics Engineer.
 
 Live at: **https://engmoaznh-eng.github.io/portfolio/**
 

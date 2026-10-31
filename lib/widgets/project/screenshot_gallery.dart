@@ -31,8 +31,11 @@ class ScreenshotGallery extends StatelessWidget {
             child: GestureDetector(
               onTap: () => _openLightbox(context, index),
               child: Container(
-                decoration: BoxDecoration(border: Border.all(color: AppColors.border)),
-                child: ProjectImage(assetPath: path, projectName: projectName),
+                decoration: BoxDecoration(
+                  color: AppColors.surfaceElevated,
+                  border: Border.all(color: AppColors.border),
+                ),
+                child: ProjectImage(assetPath: path, projectName: projectName, fit: BoxFit.contain),
               ),
             ),
           ),
@@ -69,6 +72,8 @@ class _LightboxState extends State<_Lightbox> {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+
     return Dialog(
       backgroundColor: Colors.transparent,
       insetPadding: const EdgeInsets.all(AppDimensions.spaceLg),
@@ -76,10 +81,17 @@ class _LightboxState extends State<_Lightbox> {
         alignment: Alignment.center,
         children: [
           ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 900, maxHeight: 600),
-            child: AspectRatio(
-              aspectRatio: 16 / 10,
-              child: ProjectImage(assetPath: widget.screenshots[_index], projectName: widget.projectName),
+            constraints: BoxConstraints(
+              maxWidth: screenSize.width * 0.85,
+              maxHeight: screenSize.height * 0.85,
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(AppDimensions.radiusMd),
+              child: ProjectImage(
+                assetPath: widget.screenshots[_index],
+                projectName: widget.projectName,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           Positioned(

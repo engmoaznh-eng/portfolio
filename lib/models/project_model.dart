@@ -23,6 +23,7 @@ class Project {
     required this.category,
     this.technologies = const [],
     this.screenshotCount = 3,
+    this.hasLogo = false,
     this.githubUrl,
     this.liveUrl,
   });
@@ -39,10 +40,14 @@ class Project {
   /// Number of screenshot-N.png files expected in the project's asset folder.
   final int screenshotCount;
 
+  /// Whether `assets/images/projects/<id>/logo.png` (the app's own icon) exists.
+  final bool hasLogo;
+
   final String? githubUrl;
   final String? liveUrl;
 
   String get coverImage => 'assets/images/projects/$id/cover.png';
+  String get logoImage => 'assets/images/projects/$id/logo.png';
 
   List<String> get screenshots => List.generate(
         screenshotCount,
